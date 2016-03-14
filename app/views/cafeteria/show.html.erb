@@ -16,9 +16,8 @@
 						<p><%= @menu.des %></p>
 					</div>
 					<div class="field-group-format-wrapper" style="display: block;">
-						<% Food.where(["menu = ?", @menu.id]).find_each do |food| %>
-						  <%=food.name%>
-						<% end %>
+						
+						
 					</div>
 				</div>
 			</div>
