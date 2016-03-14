@@ -1,0 +1,27 @@
+<div>
+	<section class="fifty-fifty black">
+		<div  class="ds-2col-fluid node node-article node-teaser view-mode-teaser slide active clearfix">
+			
+			<div class="group-left picture">
+				<div class="field field-name-field-image">
+					<a><img src="<%= @menu.image %>" width="350" height="350" alt="<%= @menu.title %>" /></a>
+				</div>    
+			</div>
+				
+			<div class="group-right content">
+				<div class="collapsible wrap speed-none effect-none">
+					<h3><span class="field-group-format-toggler"></span></h3>
+					<div class="field-group-format-wrapper" style="display: block;">
+						<div class="field field-name-title"><h2><%= @menu.title %></h2></div>
+						<p><%= @menu.des %></p>
+					</div>
+					<div class="field-group-format-wrapper" style="display: block;">
+						<% Food.where(["menu = ?", @menu.id]).find_each do |food| %>
+						  <%=food.name%>
+						<% end %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
