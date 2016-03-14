@@ -6,7 +6,7 @@ Submitted by: **nhiepphong**
 
 Time spent: **16** hours spent in total
 
-URL: **heroku-app-url**
+URL: **http://coder-restaurant-1.herokuapp.com/**
 
 ## User Stories
 
