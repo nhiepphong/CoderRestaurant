@@ -1,26 +1,63 @@
-<div>
-	<section class="fifty-fifty black">
-		<div  class="ds-2col-fluid node node-article node-teaser view-mode-teaser slide active clearfix">
-			
-			<div class="group-left picture">
-				<div class="field field-name-field-image">
-					<a><img src="<%= @menu.image %>" width="350" height="350" alt="<%= @menu.title %>" /></a>
-				</div>    
+<header class="header" id="header" role="banner">
+	<div class="header__region region region-header">
+		<div id="block-block-24" class="block block-block first last odd">
+			<section id="splash">
+				<div class="video-wrap">
+					<div id="video"></div>
+					<script>
+					$().ready(function() {
+					$('#video').tubular({videoId: 'dgbYHTecO7g'});
+					});
+					</script>
+				</div>
+				<div class="wrap">
+					<img src="img/logo.svg">
+					<nav id="main-nav" class="effect-0" role="navigation" tabindex="-1">
+						<h2 class="element-invisible">Main menu</h2>
+						<ul class="nav links inline clearfix"><li class="menu-2344 first"><a href="/" title="">Home</a></li>
+							<li class="menu-2343"><a href="/cafeteria">Cafeteria</a></li>
+							<li class="menu-2397 last"><a href="/contact-us">Contact Us</a></li>
+						</ul>
+					</nav>	
 			</div>
-				
-			<div class="group-right content">
-				<div class="collapsible wrap speed-none effect-none">
-					<h3><span class="field-group-format-toggler"></span></h3>
-					<div class="field-group-format-wrapper" style="display: block;">
-						<div class="field field-name-title"><h2><%= @menu.title %></h2></div>
-						<p><%= @menu.des %></p>
-					</div>
-					<div class="field-group-format-wrapper" style="display: block;">
-						
-						
-					</div>
+			</section>
+		</div>
+	</div>
+</header>
+<div id="main">
+	<div id="content" role="main">
+		<a id="main-content"></a>
+		<h1 class="page__title title" id="page-title">Cafeteria</h1>
+		<div class="view view-journal-view view-id-journal_view view-display-id-page view-dom-id-124495fd55d49bdcbeb8b84ecd07fcd5">
+			<div class="view-content">
+
+				<div>
+					<section class="fifty-fifty black">
+						<div  class="ds-2col-fluid node node-article node-teaser view-mode-teaser slide active clearfix">
+							
+							<div class="group-left picture">
+								<div class="field field-name-field-image">
+									<a><img src="<%= @menu.image %>" width="350" height="350" alt="<%= @menu.title %>" /></a>
+								</div>    
+							</div>
+								
+							<div class="group-right content">
+								<div class="collapsible wrap speed-none effect-none">
+									<h3><span class="field-group-format-toggler"></span></h3>
+									<div class="field-group-format-wrapper" style="display: block;">
+										<div class="field field-name-title"><h2><%= @menu.title %></h2></div>
+										<p><%= @menu.des %></p>
+									</div>
+									<div class="field-group-format-wrapper" style="display: block;">
+										
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
 				</div>
 			</div>
-		</div>
-	</section>
+		</div>          
+	</div>
 </div>
